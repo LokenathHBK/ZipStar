@@ -1,0 +1,305 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl"
+    android:background="#F0F0F0"
+    android:orientation="vertical"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="#F0F0F0"
+        android:padding="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:id="@+id/actionBar"
+            android:background="#F0F0F0"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:paddingLeft="25dp"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="#F0F0F0"
+                android:gravity="center_vertical"
+               android:layout_weight="2"
+                >
+            <com.esolz.su.zipstar.customviews.MyriadProSemibold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next best item ?"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="#F0F0F0"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                >
+                <ImageSwitcher
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/togglebuttong"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="#F0F0F0"
+        android:paddingLeft="25dp"
+        android:id="@+id/personalSetting"
+        android:gravity="center_vertical"
+        >
+        <com.esolz.su.zipstar.customviews.MyriadProLight
+            android:id="@+id/Itemname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingTop="5dp"
+            android:textColor="#000000"
+            android:text="Allow zipstar to select similar item when your requestd item are not available chossing 'No' mean unavailable item will not be purchased."
+
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="#F0F0F0"
+            android:paddingLeft="25dp"
+            android:id="@+id/accountSetting"
+
+            android:gravity="center_vertical"
+            >
+            <com.esolz.su.zipstar.customviews.MyriadProRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:paddingTop="5dp"
+                android:textColor="#000000"
+                android:text="Select Store to order groceries from"
+android:layout_marginTop="10dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:paddingLeft="25dp"
+            android:id="@+id/managestoreorder"
+            android:weightSum="4"
+            android:gravity="center_vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:layout_weight="3.5"
+                >
+            <com.esolz.su.zipstar.customviews.MyriadProSemibold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="5dp"
+                android:textColor="#000000"
+                android:text="Manage Stores for order"
+
+                />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="right"
+                android:layout_weight=".5"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/rightarrow"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:background="#F0F0F0"
+            android:paddingLeft="25dp"
+            android:id="@+id/notification"
+
+            android:gravity="center_vertical"
+            >
+            <com.esolz.su.zipstar.customviews.MyriadProRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="5dp"
+                android:textColor="#000000"
+                android:text="Select stores that you want to make moneyshopping at"
+
+                />
+            <com.esolz.su.zipstar.customviews.MyriadProBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="5dp"
+                android:textColor="#DA1E00"
+                android:text="("
+                android:layout_marginLeft="10dp"
+                />
+            <com.esolz.su.zipstar.customviews.MyriadProBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="5dp"
+                android:textColor="#DA1E00"
+                android:text="23"
+
+                />
+            <com.esolz.su.zipstar.customviews.MyriadProBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="5dp"
+                android:textColor="#DA1E00"
+                android:text=")"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:paddingLeft="25dp"
+            android:id="@+id/managestoreshoping"
+android:weightSum="4"
+            android:gravity="center_vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="right"
+                android:layout_weight="3.5"
+                >
+            <com.esolz.su.zipstar.customviews.MyriadProSemibold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:paddingTop="5dp"
+                android:textColor="#000000"
+                android:text="Manage Stores for Shopping Jobs"
+
+                />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="right"
+                android:layout_weight=".5"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/rightarrow"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:paddingLeft="25dp"
+            android:id="@+id/zipstar"
+            android:gravity="center_vertical"
+           android:weightSum="4"
+
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="left"
+                android:layout_weight="3.5"
+                android:orientation="vertical"
+                >
+            <com.esolz.su.zipstar.customviews.MyriadProSemibold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:text="Want to be a ZIPSTAR ?"
+
+                />
+            <com.esolz.su.zipstar.customviews.MyriadProRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+
+                android:textColor="#0779C0"
+                android:text="Your current mimimum Rate is 0 $"
+
+                />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="right"
+                android:layout_weight=".5"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/rightarrow"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

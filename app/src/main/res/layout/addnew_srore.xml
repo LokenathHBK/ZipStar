@@ -1,0 +1,328 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl"
+    android:background="#FFFFFF"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:background="#ffffff"
+
+        >
+
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/actionBar"
+        android:background="#ffffff"
+
+        >
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:id="@+id/addstore"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/black_back"
+                  />
+
+        <com.esolz.su.zipstar.customviews.MyriadProSemibold
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Add New Stores"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_toRightOf="@+id/addstore"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/prgbar"
+    android:layout_centerInParent="true"
+    android:visibility="gone"
+    />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:id="@+id/search_hint"
+        android:weightSum="1"
+        android:background="#ffffff"
+        android:layout_below="@+id/actionBar"
+        android:paddingLeft="15dp"
+android:layout_weight="1"
+        >
+
+        <com.esolz.su.zipstar.customviews.MyriadProRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Search hear first by  entering a ZipCode"
+            android:textColor="#000"
+            android:textSize="16sp"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:id="@+id/searchll"
+        android:weightSum="1"
+        android:background="#F0F0F0"
+        android:layout_below="@+id/search_hint"
+        android:paddingLeft="15dp"
+        android:layout_weight="1"
+
+        >
+
+        <com.esolz.su.zipstar.customviews.MyriadProRegularEdit
+            android:gravity="center_vertical"
+            android:layout_weight=".7"
+       android:id="@+id/serchbox"
+       android:layout_width="0dp"
+       android:layout_height="fill_parent"
+            android:background="#00000000"
+            android:hint="Zip Code"
+            />
+
+    <Button
+    android:background="@drawable/search_btn"
+    android:layout_weight=".3"
+    android:layout_toRightOf="@+id/serchbox"
+    android:layout_width="0dp"
+    android:layout_height="30dp"
+    android:id="@+id/searchbutton"
+    android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:text="Search"
+        android:textColor="#ffffff"
+android:layout_marginLeft="20dp"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:id="@+id/searchll1"
+        android:weightSum="1"
+        android:layout_below="@+id/searchll"
+        android:background="#ffffff"
+        android:paddingLeft="15dp"
+android:gravity="center"
+        android:layout_weight="1"
+        >
+
+        <com.esolz.su.zipstar.customviews.MyriadProRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Your current store"
+            android:textColor="#000"
+            android:textSize="18sp"
+android:gravity="left"
+android:layout_gravity="left"
+            />
+
+    </LinearLayout>
+
+    <com.esolz.su.zipstar.SwipeListView.SwipeMenuListView
+        android:id="@+id/add_newstorelistview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/searchll1"
+        android:visibility="gone"
+        android:layout_weight="6"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/actionBa1r"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="6"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_below="@+id/searchll1"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <com.esolz.su.zipstar.customviews.MyriadProRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="For searching any product first write the"
+            android:textColor="#0779C0"
+            android:textSize="20sp"
+            android:id="@+id/firstline"
+
+            />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_below="@+id/searchll1"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <com.esolz.su.zipstar.customviews.MyriadProRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="product name in the search field and then"
+            android:textColor="#0779C0"
+            android:textSize="20sp"
+            android:id="@+id/secondline"
+            android:layout_below="@+id/firstline"
+
+            />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_below="@+id/searchll1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <com.esolz.su.zipstar.customviews.MyriadProRegular
+            android:id="@+id/abcd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="click on the"
+            android:textColor="#0779C0"
+            android:textSize="20sp"
+            android:layout_below="@+id/secondline"
+
+            />
+        <com.esolz.su.zipstar.customviews.MyriadProRegular
+            android:id="@+id/next11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="search icon."
+            android:textColor="#FE0000"
+            android:textSize="20sp"
+android:layout_marginLeft="5dp"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/landing_container"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:background="#4E4E4E"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/one"
+                android:gravity="center"
+                >
+                <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bottombaricon1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/landing_selector"
+
+                    android:id="@+id/oneimg"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/two"
+                android:gravity="center"
+
+                >
+                <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bottombaricon2"
+                    android:layout_gravity="center"
+                    android:id="@+id/twoimg"
+                    android:src="@drawable/landing_selector"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/three"
+                android:gravity="center"
+                >
+                <ImageButton
+                    android:id="@+id/threeimg"
+                    android:src="@drawable/landing_selector"
+
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bottombaricon3"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/four"
+                android:gravity="center"
+                >
+                <ImageButton
+                    android:id="@+id/fourimg"
+
+                    android:layout_width="35dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/bottombaricon4"
+                    android:src="@drawable/landing_selector"
+
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>

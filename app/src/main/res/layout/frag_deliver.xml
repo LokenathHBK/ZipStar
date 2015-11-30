@@ -1,0 +1,224 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/addstore_container"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative_store_cont"
+        >
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/pbar"
+            android:visibility="gone"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:id="@+id/selectstore_actionBar"
+
+            android:background="@drawable/background_blue"
+            >
+
+
+
+            <com.esolz.su.zipstar.customviews.MyriadProBold
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Jobs"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                />
+
+
+
+        </RelativeLayout>
+
+<!--lena hai layout-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="8"
+            android:orientation="vertical"
+            android:layout_below="@+id/selectstore_actionBar"
+            android:id="@+id/tab"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_below="@+id/selectstore_actionBar"
+           android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:id="@+id/openjob"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:background="#FFFFFF">
+
+
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:id="@+id/followingtxt"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent"
+                    android:textSize="18sp"
+                    android:text="Open Job"
+                    android:textColor="#000000"
+                    android:textAllCaps="true"
+
+                    android:gravity="center"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="@drawable/line1"
+
+                    android:id="@+id/v2"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/managewindow"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:background="#FFFFFF">
+
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:id="@+id/followtxt"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent"
+                    android:text="Manage Windows"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textAllCaps="true"/>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:background="@drawable/line1"
+                    android:id="@+id/v3"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/deliver_container"
+            android:background="#ffffff"
+            android:layout_weight="6"
+            >
+
+        </FrameLayout>
+
+<!--footer-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:id="@+id/landing_container"
+                android:layout_weight="1"
+                android:weightSum="4"
+                android:orientation="horizontal"
+                android:background="#4E4E4E"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/one"
+                    android:gravity="center"
+                    >
+                    <ImageButton
+                        android:layout_width="35dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bottombaricon1"
+                        android:layout_gravity="center"
+                        android:src="@drawable/landing_selector"
+
+                        android:id="@+id/oneimg"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/two"
+                    android:gravity="center"
+
+                    >
+                    <ImageButton
+                        android:layout_width="35dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/bottombaricon2"
+                        android:layout_gravity="center"
+                        android:id="@+id/twoimg"
+                        android:src="@drawable/landing_selector"
+
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/three"
+                    android:gravity="center"
+                    >
+                    <ImageButton
+                        android:id="@+id/threeimg"
+                        android:src="@drawable/landing_selector"
+
+                        android:layout_width="35dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/bottombaricon3"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/four"
+                    android:gravity="center"
+                    >
+                    <ImageButton
+                        android:id="@+id/fourimg"
+
+                        android:layout_width="35dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/bottombaricon4"
+                        android:src="@drawable/landing_selector"
+
+                        android:layout_gravity="center"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+    </LinearLayout>
+
+    </RelativeLayout>
+</FrameLayout>

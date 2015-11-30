@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="#FFFFFF"
+    >
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_below="@+id/selectstore_actionBar"
+        >
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:weightSum="2"
+            >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+           android:gravity="center_vertical"
+           android:layout_weight="1"
+            >
+
+
+            <com.esolz.su.zipstar.customviews.MyriadProSemibold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Open Job"
+                android:textColor="#000000"
+                android:textAllCaps="true"
+android:id="@+id/time_slot_start"
+                android:gravity="center"/>
+
+            <com.esolz.su.zipstar.customviews.MyriadProRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="to"
+                android:textColor="#000000"
+                android:textAllCaps="true"
+
+                android:gravity="center"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                >
+
+
+                <com.esolz.su.zipstar.customviews.MyriadProSemibold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text="Open Job"
+                    android:textColor="#000000"
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    android:id="@+id/time_slot_end"/>
+
+                <com.esolz.su.zipstar.customviews.MyriadProSemibold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textAllCaps="true"
+
+
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+
+            android:gravity="center"
+            >
+
+
+            <com.esolz.su.zipstar.customviews.MyriadProSemibold                android:id="@+id/back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+            android:layout_gravity="center"
+android:text="0"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/openjob"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+        >
+
+
+            <com.esolz.su.zipstar.customviews.MyriadProRegular
+                android:id="@+id/multipel"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:textSize="18sp"
+                android:text="Open Job"
+                android:textColor="#085987"
+                android:textAllCaps="true"
+
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/managewindow"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+
+
+            android:gravity="center"
+            >
+
+        <CheckBox
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+           android:id="@+id/checkbox"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:padding="8dp" >
+
+    <com.esolz.su.zipstar.customviews.MyriadProBold
+        android:id="@+id/product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="nameaaaaa"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:singleLine="true"
+        />
+
+
+    <com.esolz.su.zipstar.customviews.MyriadProLight
+        android:id="@+id/location"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="10dp"
+        android:text="name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:layout_below="@+id/product_name"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,522 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:orientation="vertical"
+
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/addstore_container1"
+        android:layout_weight="9"
+        >
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative_store_cont"
+        android:orientation="vertical"
+        android:weightSum="10"
+        >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/selectstore_actionBar"
+android:layout_weight="1"
+        android:background="#067BC0"
+        >
+
+        <Button
+            android:layout_marginLeft="19dp"
+            android:id="@+id/backlist"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back"
+
+                    />
+
+        <com.esolz.su.zipstar.customviews.MyriadProSemibold
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="List"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_toRightOf="@+id/backlist"
+            android:layout_marginLeft="9dp"
+            />
+
+        <com.esolz.su.zipstar.customviews.MyriadProSemibold
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Select a Store"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            />
+
+        <Button
+            android:id="@+id/additemto"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/title_text"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/add"
+            android:layout_marginRight="30dp"           />
+
+    </RelativeLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/pbar"
+            android:visibility="gone"
+            />
+
+    <com.esolz.su.zipstar.SwipeListView.SwipeMenuListView
+        android:id="@+id/selectstore_listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#ffffff"
+        android:layout_weight="9"
+        />
+
+
+<!--footer-->
+    </LinearLayout>
+    </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:id="@+id/landing_container"
+            android:layout_weight="1"
+            android:weightSum="4"
+            android:orientation="horizontal"
+            android:background="#4E4E4E"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/one"
+                android:gravity="center"
+                >
+                <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bottombaricon1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/landing_selector"
+
+                    android:id="@+id/oneimg"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/two"
+                android:gravity="center"
+
+                >
+                <ImageButton
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/bottombaricon2"
+                    android:layout_gravity="center"
+                    android:id="@+id/twoimg"
+                    android:src="@drawable/landing_selector"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/three"
+                android:gravity="center"
+                >
+                <ImageButton
+                    android:id="@+id/threeimg"
+                    android:src="@drawable/landing_selector"
+
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bottombaricon3"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:id="@+id/four"
+                android:gravity="center"
+                >
+                <ImageButton
+                    android:id="@+id/fourimg"
+
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/bottombaricon4"
+                    android:src="@drawable/landing_selector"
+
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    <!--</LinearLayout>-->
+    <!--</FrameLayout>-->
+
+    <!-- new layout-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/delivery_address"
+        android:visibility="gone"
+        android:background="#CC000000"
+        android:padding="20dp"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+android:id="@+id/backlayout"
+
+            >
+
+
+
+
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/arrow1"
+                android:layout_marginRight="30dp"
+                android:id="@+id/cancel"
+                />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:weightSum="10"
+           android:layout_below="@+id/backlayout"
+            >
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="2"
+                android:gravity="center"
+                >
+
+
+
+
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Write down your Delivery Address"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    />
+
+            </LinearLayout>
+
+
+            <!-- address-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1.5"
+                android:weightSum="4"
+
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+
+                    >
+
+                    <com.esolz.su.zipstar.customviews.MyriadProRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address:"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="left"
+
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="2.5"
+                    android:padding="18dp"
+
+                    >
+                    <com.esolz.su.zipstar.customviews.MyriadProRegularEdit
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/signup"
+                        android:id="@+id/address"
+                       android:singleLine="true"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!-- city-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1.5"
+                android:weightSum="4"
+
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+
+                    >
+
+                    <com.esolz.su.zipstar.customviews.MyriadProRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City:"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="2.5"
+                    android:padding="18dp"
+
+                    >
+                    <com.esolz.su.zipstar.customviews.MyriadProRegularEdit
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/signup"
+                        android:id="@+id/city"
+                        android:singleLine="true"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!-- state-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1.5"
+                android:weightSum="4"
+
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+
+                    >
+
+                    <com.esolz.su.zipstar.customviews.MyriadProRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="State:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="2.5"
+                    android:padding="18dp"
+
+                    >
+                    <com.esolz.su.zipstar.customviews.MyriadProRegularEdit
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/signup"
+                        android:id="@+id/state"
+                        android:singleLine="true"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <!--pin-->
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1.5"
+                android:weightSum="4"
+
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="1.5"
+                    android:gravity="center"
+
+                    >
+
+                    <com.esolz.su.zipstar.customviews.MyriadProRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pin:"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal"
+                    android:layout_weight="2.5"
+                    android:padding="18dp"
+                    >
+                    <com.esolz.su.zipstar.customviews.MyriadProRegularEdit
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/signup"
+                        android:id="@+id/pin"
+                        android:singleLine="true"
+                        />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!-- done-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:padding="20dp"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/done"
+                    android:text="Continue"
+                    android:textColor="#ffffff"
+                    android:id="@+id/done"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent"-->
+            <!-->-->
+            <!--<ProgressBar-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:visibility="gone"-->
+                <!--/>-->
+
+        <!--</RelativeLayout>-->
+
+    </ScrollView>
+
+
+</LinearLayout>

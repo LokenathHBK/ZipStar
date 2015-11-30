@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_below="@+id/howtomakemoney"
+        android:id="@+id/tab"
+        android:background="#D3D3D3"
+        >
+
+        <LinearLayout
+            android:id="@+id/acceptjob"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+           >
+
+            <com.esolz.su.zipstar.customviews.MyriadProRegular
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:text="Accepted Jobs"
+                android:textColor="#DA1E00"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:id="@+id/txtaccept"
+                />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/line1"
+                android:id="@+id/v1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/waitingjob"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+           >
+
+
+            <com.esolz.su.zipstar.customviews.MyriadProRegular
+                android:id="@+id/txtwaiting"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:textSize="14sp"
+                android:text="Waiting Jobs"
+                android:textColor="#000000"
+
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/line1"
+                android:visibility="gone"
+                android:id="@+id/v2"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/prevjob"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+           >
+
+            <com.esolz.su.zipstar.customviews.MyriadProRegular
+                android:id="@+id/txtprev"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:text="Previous Jobs"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:gravity="center"
+                />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/line1"
+                android:id="@+id/v3"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/pending_container"
+        android:layout_below="@+id/tab"
+        >
+        <com.esolz.su.zipstar.customviews.MyriadProLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Data Found"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/accepet_list"
+            >
+        </ListView>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pgbar"
+            android:layout_gravity="center"
+            android:visibility="gone"
+
+
+            />
+    </FrameLayout>
+
+
+</LinearLayout>

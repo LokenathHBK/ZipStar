@@ -1,0 +1,399 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:weightSum="10"
+
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:id="@+id/full_container"
+
+        >
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:weightSum="10"
+
+        >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:layout_weight="9"
+       android:id="@+id/search_container"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        android:background="#ffffff"
+
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/actionBar"
+        android:layout_weight="1"
+        android:background="#067BC0"
+        >
+
+
+
+        <com.esolz.su.zipstar.customviews.MyriadProSemibold
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Grocery Order list"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            />
+
+        <Button
+            android:id="@+id/additemto"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/title_text"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/add"
+            android:layout_marginRight="30dp"           />
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.20"
+        android:id="@+id/container1"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="8"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF">
+
+                    <com.esolz.su.zipstar.customviews.MyriadProRegular                android:id="@+id/followtxt"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="List"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:textAllCaps="true"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/line1"
+                        android:id="@+id/v1"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF">
+
+
+                    <com.esolz.su.zipstar.customviews.MyriadProRegular
+                        android:id="@+id/followingtxt"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textSize="20sp"
+                        android:text="favorites"
+                        android:textColor="#000000"
+                        android:textAllCaps="true"
+                        android:gravity="center"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@drawable/line1"
+                        android:visibility="gone"
+                        android:id="@+id/v2"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:id="@+id/container"
+                >
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- view-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:id="@+id/view"
+                android:visibility="gone"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".85"
+                    android:orientation="vertical"
+                    android:background="#077ABD"
+
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        >
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:id="@+id/ok"
+
+                            >
+                            <com.esolz.su.zipstar.customviews.MyriadProSemibold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="OK"
+                                android:textColor="#1EBD00"
+                                />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:id="@+id/cancel"
+                            >
+                            <com.esolz.su.zipstar.customviews.MyriadProSemibold
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="Cancel"
+                                android:textColor="#FE0000"
+
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        >
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/list_quant"
+                            android:listSelector="#D3D4D5"
+                            >
+
+                        </ListView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.15"
+                    >
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:id="@+id/done"
+        android:background="#097EC1"
+        >
+
+        <com.esolz.su.zipstar.customviews.MyriadProSemibold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Done"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/additem"
+        android:background="#097EC1"
+        >
+
+        <com.esolz.su.zipstar.customviews.MyriadProSemibold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Add Item to Shopping List"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            />
+
+
+
+    </LinearLayout>
+    </LinearLayout>
+    </FrameLayout>
+   <!-- ffffffffffffffffffffffffffffffffffffff-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/landing_container"
+        android:layout_weight="1"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:background="#4E4E4E"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/one"
+            android:gravity="center"
+            >
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bottombaricon1"
+                android:layout_gravity="center"
+                android:src="@drawable/landing_selector"
+                android:id="@+id/oneimg"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/two"
+            android:gravity="center"
+            >
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:background="@drawable/bottombaricon2"
+                android:layout_gravity="center"
+                android:id="@+id/twoimg"
+                android:src="@drawable/landing_selector"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/three"
+            android:gravity="center"
+            >
+            <ImageButton
+                android:id="@+id/threeimg"
+                android:background="@drawable/bottombaricon3"
+                android:src="@drawable/landing_selector"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                 />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/four"
+            android:gravity="center"
+            >
+            <ImageButton
+                android:id="@+id/fourimg"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/bottombaricon4"
+                android:src="@drawable/landing_selector"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

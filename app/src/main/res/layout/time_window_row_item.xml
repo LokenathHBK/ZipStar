@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2.25"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="left"
+
+            >
+            <com.esolz.su.zipstar.customviews.MyriadProBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Stores"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/title_menupopuptrack"
+                />
+
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.esolz.su.zipstar.customviews.MyriadProLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Stores"
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/title_menupopuptrack"
+                android:textColor="#000000"
+                />
+            <com.esolz.su.zipstar.customviews.MyriadProLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Stores"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/title_menupopuptrack"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+android:gravity="right"
+
+            >
+            <com.esolz.su.zipstar.customviews.MyriadProBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Stores"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/title_menupopuptrack"
+                />
+            <com.esolz.su.zipstar.customviews.MyriadProLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Stores"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/title_menupopuptrack"
+               android:layout_marginTop="20dp"
+                />
+
+            <com.esolz.su.zipstar.customviews.MyriadProLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Stores"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/title_menupopuptrack"
+                />
+
+            <com.esolz.su.zipstar.customviews.MyriadProLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Stores"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/title_menupopuptrack"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight=".25"
+            android:orientation="vertical"
+android:gravity="center"
+            >
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/back"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

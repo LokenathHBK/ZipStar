@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/actionBar"
+            android:layout_weight="1"
+            android:background="#067BC0"
+            >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/back"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="10dp"
+              />
+
+
+            <com.esolz.su.zipstar.customviews.MyriadProSemibold
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Manage Windows"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+
+            >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="10"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:weightSum="5"
+                android:orientation="horizontal"
+                android:layout_below="@+id/selectstore_actionBar"
+                android:layout_weight="1"
+                >
+
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF"
+                    android:gravity="center_vertical"
+                  android:paddingLeft="10dp"
+                    >
+
+
+                    <com.esolz.su.zipstar.customviews.CircleImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                  android:src="@drawable/clockicon"
+                        android:gravity="center"
+                        android:layout_gravity="center_vertical"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF">
+
+
+                    <com.esolz.su.zipstar.customviews.MyriadProLight
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:textSize="14sp"
+                        android:text="Sign-ups"
+                        android:textColor="#000000"
+
+                        android:gravity="center"/>
+                    <com.esolz.su.zipstar.customviews.MyriadProLight
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:textSize="14sp"
+                        android:text="so far"
+                        android:textColor="#000000"
+
+                        android:gravity="center"/>
+
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/openjob"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF">
+
+
+                    <com.esolz.su.zipstar.customviews.MyriadProLight
+                        android:id="@+id/followingtxt"
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:textSize="14sp"
+                        android:text="Multiple"
+                        android:textColor="#000000"
+
+                        android:gravity="center"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/managewindow"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:background="#FFFFFF">
+
+                    <com.esolz.su.zipstar.customviews.MyriadProLight
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:text="Open to"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                       />
+                    <com.esolz.su.zipstar.customviews.MyriadProLight
+                        android:layout_width="fill_parent"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:text="sign up"
+                        android:textColor="#000000"
+                        android:textSize="14sp"
+                        android:gravity="center"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+<ListView
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="9"
+    android:id="@+id/timemanagelistview"
+    >
+
+</ListView>
+
+        </LinearLayout>
+
+
+            <!-- hidden lay out for multipel selection-->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:weightSum="10"
+                android:orientation="vertical"
+                android:id="@+id/multipel_layout"
+android:visibility="gone"
+                >
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="0dp"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_below="@+id/selectstore_actionBar"
+                    android:layout_weight="1"
+
+                    android:background="#077ABD"
+                    >
+
+
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/ok"
+                        >
+
+
+                        <com.esolz.su.zipstar.customviews.MyriadProBold
+                            android:layout_width="fill_parent"
+                            android:layout_weight="1"
+                            android:layout_height="fill_parent"
+                            android:textSize="16sp"
+                            android:text="OK"
+                            android:textColor="#1EBD00"
+
+                            android:gravity="center"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/cancel"
+                        >
+
+                        <com.esolz.su.zipstar.customviews.MyriadProBold
+                            android:layout_width="fill_parent"
+                            android:layout_weight="1"
+                            android:layout_height="fill_parent"
+                            android:text="Cancel"
+                            android:textColor="#FE0000"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+                <ListView
+                    android:layout_width="170dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="9"
+                    android:background="#077ABD"
+                    android:id="@+id/list_multipel"
+                    android:listSelector="#D3D4D5"
+
+                    >
+
+                </ListView>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <!-- multipel layout-->
+
+
+
+
+
+        <!-- end hear-->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#DB1E00"
+            android:gravity="center"
+            android:id="@+id/done"
+            >
+            <com.esolz.su.zipstar.customviews.MyriadProSemibold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

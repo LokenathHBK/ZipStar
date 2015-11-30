@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       android:background="#ffffff"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/zipsterreview"
+        android:background="@drawable/background_blue"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/back"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="10dp"
+            />
+
+
+        <com.esolz.su.zipstar.customviews.MyriadProBold
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Review Zipstar "
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
+        android:background="#F3F3F3"
+        android:orientation="vertical"
+android:weightSum="4"
+android:padding="15dp"        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#F3F3F3"
+            android:orientation="vertical"
+            android:gravity="center"
+android:layout_weight="1"
+            >
+
+
+        <com.esolz.su.zipstar.customviews.MyriadProRegular
+            android:id="@+id/zipstername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review Zipstar "
+            android:textColor="#067BBF"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#F3F3F3"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_weight="1"
+
+                >
+        <com.esolz.su.zipstar.customviews.MyriadProBold
+            android:id="@+id/zipster_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John"
+            android:textColor="#000000"
+            android:textSize="25sp"
+
+          android:layout_gravity="center"
+            />
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#F3F3F3"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/rating"
+            >
+
+        <ImageView
+            android:id="@+id/s1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/yellow_star"
+android:layout_gravity="center"
+             />
+        <ImageView
+            android:id="@+id/s2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/yellow_star"
+            android:layout_gravity="center"
+
+
+       />
+
+
+        <ImageView
+            android:id="@+id/s3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/yellow_star"
+            android:layout_gravity="center"
+
+
+         />
+
+
+        <ImageView
+            android:id="@+id/s4"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/yellow_star"
+            android:layout_gravity="center"
+
+
+        />
+
+        <ImageView
+            android:id="@+id/s5"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/yellow_star"
+            android:layout_gravity="center"
+
+
+        />
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/ziplayout"
+            android:background="#F3F3F3"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+
+            >
+            <com.esolz.su.zipstar.customviews.MyriadProBold
+                android:id="@+id/zip_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15"
+                android:textColor="#000000"
+                android:textSize="22sp"
+
+
+                />
+        <com.esolz.su.zipstar.customviews.MyriadProLight
+            android:id="@+id/zip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="zip's"
+            android:textColor="#000000"
+            android:textSize="16sp"
+android:layout_marginLeft="10dp"
+            />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/listforreview"
+        >
+
+    </ListView>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:id="@+id/nodatafound"
+            android:visibility="gone"
+            >
+
+            <com.esolz.su.zipstar.customviews.MyriadProBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sorry there is No Review found for this Zipster"
+                android:textColor="#F3F3F3"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

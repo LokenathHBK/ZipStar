@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="11">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/actionBar"
+       android:layout_weight="1"
+
+        android:background="@drawable/background_blue"
+        >
+
+
+
+        <com.esolz.su.zipstar.customviews.MyriadProBold
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+          android:layout_centerInParent="true"
+            android:text="Grocery Order list"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            />
+
+        <Button
+            android:id="@+id/additemto"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/title_text"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/add"
+android:layout_marginRight="10dp"           />
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/tab1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:background="#FFFFFF">
+
+            <com.esolz.su.zipstar.customviews.MyriadProSemibold
+                android:id="@+id/followtxt"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:text="List"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textAllCaps="true"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/line1"
+                android:id="@+id/v1"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tab2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:background="#FFFFFF">
+
+
+            <com.esolz.su.zipstar.customviews.MyriadProSemibold
+                android:id="@+id/followingtxt"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_height="fill_parent"
+                android:textSize="20sp"
+                android:text="favorite"
+                android:textColor="#000000"
+                android:textAllCaps="true"
+
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/line1"
+                android:visibility="gone"
+                android:id="@+id/v2"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/frgtrackteam"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        >
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+       android:layout_weight="1"
+        android:id="@+id/done"
+        android:background="#097EC1"
+
+        >
+
+
+
+        <com.esolz.su.zipstar.customviews.MyriadProBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Done"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_weight="1"
+android:visibility="gone"
+       android:id="@+id/additem"
+        android:background="#097EC1"
+        >
+
+
+
+        <com.esolz.su.zipstar.customviews.MyriadProBold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Add item to Shoping List"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textAllCaps="true"
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

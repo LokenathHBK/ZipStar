@@ -1,0 +1,281 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl"
+    android:background="#FFFFFF"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/actionBar"
+        android:background="#067BC0"
+        >
+        <RelativeLayout
+            android:id="@+id/backlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+        <Button
+            android:layout_marginLeft="15dp"
+            android:id="@+id/title_menupopuptrack"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/back"
+            android:layout_marginRight="10dp"        />
+
+        <com.esolz.su.zipstar.customviews.MyriadProRegular
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="List"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:layout_toRightOf="@+id/title_menupopuptrack"
+            />
+        </RelativeLayout>
+        <com.esolz.su.zipstar.customviews.MyriadProRegular
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Add New"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+    <ProgressBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/prgbar"
+    android:layout_centerInParent="true"
+    android:visibility="gone"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:id="@+id/searchll"
+        android:weightSum="1"
+        android:background="#F0F0F0"
+        android:layout_below="@+id/actionBar"
+        android:paddingLeft="15dp"
+
+        >
+
+        <EditText
+            android:gravity="center_vertical"
+            android:layout_weight=".9"
+        android:id="@+id/serchbox"
+       android:layout_width="0dp"
+       android:layout_height="match_parent"
+            android:background="#00000000"
+            android:hint="Search"
+            android:singleLine="true"
+            />
+
+    <ImageView
+    android:background="#00000000"
+    android:layout_weight=".1"
+        android:padding="7dp"
+    android:layout_toRightOf="@+id/serchbox"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:id="@+id/searchbutton"
+    android:src="@drawable/search"
+    android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="vertical"
+        android:id="@+id/searchll1"
+        android:weightSum="1"
+        android:layout_below="@+id/searchll"
+        android:background="#ffffff"
+        android:paddingLeft="15dp"
+
+        >
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/serchbox1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchll1"
+        android:visibility="gone"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/actionBa1r"
+        android:background="#ffffff"
+        android:layout_below="@+id/searchll1"
+        android:orientation="vertical"
+        android:gravity="center"
+       android:visibility="visible"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_below="@+id/searchll1"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <com.esolz.su.zipstar.customviews.MyriadProRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="For searching any product first write the"
+            android:textColor="#0779C0"
+            android:textSize="20sp"
+            android:id="@+id/firstline"
+
+            />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_below="@+id/searchll1"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <com.esolz.su.zipstar.customviews.MyriadProRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="product name in the search field and then"
+            android:textColor="#0779C0"
+            android:textSize="20sp"
+            android:id="@+id/secondline"
+            android:layout_below="@+id/firstline"
+
+            />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_below="@+id/searchll1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <com.esolz.su.zipstar.customviews.MyriadProRegular
+            android:id="@+id/abcd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="click on the"
+            android:textColor="#0779C0"
+            android:textSize="20sp"
+            android:layout_below="@+id/secondline"
+
+            />
+        <com.esolz.su.zipstar.customviews.MyriadProRegular
+            android:id="@+id/next11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="search icon."
+            android:textColor="#FE0000"
+            android:textSize="20sp"
+android:layout_marginLeft="5dp"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/manualyadd"
+        android:background="#ffffff"
+        android:layout_below="@+id/searchll1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:layout_below="@+id/searchll1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingBottom="100dp"
+            >
+            <ImageView
+                android:id="@+id/abcd11"
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:src="@drawable/itemnot_foundicon"
+
+                />
+
+            <com.esolz.su.zipstar.customviews.MyriadProRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ITEM NOT FOUND"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:paddingTop="30dp"
+                />
+            <com.esolz.su.zipstar.customviews.MyriadProLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap to Add New"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:paddingTop="10dp"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/progresslayout"
+        android:orientation="vertical"
+       android:visibility="gone"
+        android:gravity="center"
+        >
+
+    <ProgressBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    />
+    </ScrollView>
+
+</RelativeLayout>

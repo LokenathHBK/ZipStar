@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       android:background="#ffffff"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/zipsterreview"
+        android:background="#067BC0"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/back"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            />
+
+
+        <com.esolz.su.zipstar.customviews.MyriadProSemibold
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Review Jobs"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#F0F0F0"
+            android:weightSum="10"
+            >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#F3F3F3"
+        android:orientation="vertical"
+android:weightSum="4"
+android:padding="15dp"
+        android:layout_weight="3"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#F3F3F3"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight=".75"
+            >
+
+
+        <com.esolz.su.zipstar.customviews.MyriadProRegular
+            android:id="@+id/zipstername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Name"
+            android:textColor="#067BBF"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#F3F3F3"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_weight="1.25"
+
+                >
+        <com.esolz.su.zipstar.customviews.MyriadProSemibold
+            android:id="@+id/zipster_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zip 100"
+            android:textColor="#000000"
+            android:textSize="25sp"
+
+          android:layout_gravity="center"
+            />
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#F3F3F3"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/rating"
+            android:visibility="invisible"
+            >
+
+        <ImageView
+            android:id="@+id/s1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/yellow_star"
+android:layout_gravity="center"
+             />
+        <ImageView
+            android:id="@+id/s2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/yellow_star"
+            android:layout_gravity="center"
+
+
+       />
+
+
+        <ImageView
+            android:id="@+id/s3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/yellow_star"
+            android:layout_gravity="center"
+
+
+         />
+
+
+        <ImageView
+            android:id="@+id/s4"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/yellow_star"
+            android:layout_gravity="center"
+
+
+        />
+
+        <ImageView
+            android:id="@+id/s5"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/yellow_star"
+            android:layout_gravity="center"
+
+
+        />
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/ziplayout"
+            android:background="#F3F3F3"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_weight="1"
+
+            >
+            <com.esolz.su.zipstar.customviews.MyriadProLight
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="location"
+                android:textColor="#000000"
+                android:textSize="14sp"
+android:layout_gravity="center"
+
+                />
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#F0F0F0"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_weight=".75"
+                android:paddingLeft="20dp"
+                >
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Review"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_gravity="left"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#F3F3F3"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_weight="1.25"
+                android:paddingLeft="40dp"
+                android:weightSum="1"
+                >
+                <com.esolz.su.zipstar.customviews.MyriadProSemibold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Review Grocery List"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".9"
+
+                    />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/rightarrow"
+                    android:layout_weight=".1"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#F3F3F3"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_weight="1.25"
+                android:paddingLeft="40dp"
+                android:weightSum="1"
+                >
+                <com.esolz.su.zipstar.customviews.MyriadProSemibold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Read Reviews"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".9"
+
+                    />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/rightarrow"
+                    android:layout_weight=".1"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#F0F0F0"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#F3F3F3"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_weight=".75"
+                android:paddingLeft="20dp"
+                >
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Offer"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_gravity="left"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#F3F3F3"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_weight="1.25"
+                android:paddingLeft="40dp"
+                android:weightSum="1"
+                >
+                <com.esolz.su.zipstar.customviews.MyriadProSemibold
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Make an Offer"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight=".9"
+
+                    />
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/rightarrow"
+                    android:layout_weight=".1"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#F3F3F3"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_weight=".75"
+                android:paddingLeft="40dp"
+                >
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Requested:"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:layout_gravity="left"
+                    />
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Requested:"
+                    android:textColor="#067BC0"
+                    android:textSize="14sp"
+                    android:layout_gravity="left"
+                    android:id="@+id/date"
+                    android:layout_marginLeft="10dp"
+                    />
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#6BE148"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/accept_order"
+                >
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Accept Order"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

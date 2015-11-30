@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/pref_coint"
+    >
+
+
+
+
+
+
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:background="#F6F6F6"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/actionBar"
+        android:background="@drawable/background_blue"
+       android:paddingLeft="8dp"
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/title_text"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/back"
+            />
+
+        <com.esolz.su.zipstar.customviews.MyriadProBold
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Stores"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/title_menupopuptrack"
+            />
+
+        <com.esolz.su.zipstar.customviews.MyriadProBold
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Preferred order time"
+
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="4"
+        >
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="2.5"
+            android:weightSum="2"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                >
+        <ImageView
+    android:layout_width="100dp"
+    android:layout_height="85dp"
+    android:background="@drawable/prefered_icon"
+    android:layout_gravity="center"
+    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingTop="20dp"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                >
+<com.esolz.su.zipstar.customviews.MyriadProRegular
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="When do you want"
+    android:textSize="20sp"
+    android:layout_gravity="center"
+    />
+
+
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Groceries dilivered?"
+                    android:textAllCaps="true"
+                    android:textSize="24sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                        android:textColor="#067BC0"
+                    />
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Click to select Time"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#DA1E00"
+                    android:id="@+id/select_time"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1.5"
+            android:id="@+id/datetime1"
+            android:weightSum="4"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+android:paddingRight="20dp"
+                android:background="#ECECEC"
+                >
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Done"
+                    android:textAllCaps="true"
+                    android:textSize="18sp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:id="@+id/done"
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="3"
+            android:id="@+id/datetime"
+            android:weightSum="4"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                >
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Day"
+                    android:textAllCaps="true"
+                    android:textSize="26sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#067BC0" />
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Day"
+                    android:textAllCaps="true"
+                    android:textSize="22sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#4E4E4E"
+
+                    android:id="@+id/date"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                >
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hour"
+                    android:textAllCaps="true"
+                    android:textSize="26sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#067BC0"
+                    />
+
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Hour"
+                    android:textAllCaps="true"
+                    android:textSize="22sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#4E4E4E"
+                    android:id="@+id/hour" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+
+                >
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Min"
+                    android:textAllCaps="true"
+                    android:textSize="26sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#067BC0"
+                    />
+
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Min"
+                    android:textAllCaps="true"
+                    android:textSize="22sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#4E4E4E"
+                    android:id="@+id/min"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+                android:gravity="center"
+
+            >
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A.M"
+                    android:textAllCaps="true"
+                    android:textSize="26sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#067BC0"
+                    android:id="@+id/ampm"
+                    />
+
+
+        </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
+</FrameLayout>

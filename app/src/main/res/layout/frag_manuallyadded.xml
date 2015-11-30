@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/actionBar"
+            android:background="#067BC0"
+            >
+            <RelativeLayout
+                android:id="@+id/backlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                <Button
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/title_menupopuptrack"
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/back"
+                    android:layout_marginRight="10dp"        />
+
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:id="@+id/next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="List"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:layout_toRightOf="@+id/title_menupopuptrack"
+                    />
+            </RelativeLayout>
+            <com.esolz.su.zipstar.customviews.MyriadProRegular
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Add New"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:id="@+id/scrolllayout"
+            android:weightSum="10"
+            >
+       <ScrollView
+           android:layout_width="match_parent"
+           android:layout_height="0dp"
+android:id="@+id/scrollView"
+android:layout_weight="8"
+           >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#ffffff"
+android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                >
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Item"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:paddingRight="20dp"
+
+                >
+                <com.esolz.su.zipstar.customviews.MyriadProRegularEdit
+                    android:paddingLeft="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:id="@+id/item"
+                    android:hint="Example:Milk,Eggs,etc."
+                    android:background="@drawable/edit_text"
+                   android:singleLine="true"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                >
+
+
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Brand"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:paddingRight="20dp"
+                >
+                <com.esolz.su.zipstar.customviews.MyriadProRegularEdit
+                    android:paddingLeft="15dp"
+android:hint="Type brand name here"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:id="@+id/brand"
+                    android:background="@drawable/edit_text"
+                    android:singleLine="true"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                >
+
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:paddingRight="20dp"
+                >
+                <com.esolz.su.zipstar.customviews.MyriadProRegularEdit
+                    android:paddingTop="15dp"
+                    android:paddingLeft="15dp"
+                    android:gravity="top"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:id="@+id/type"
+                    android:background="@drawable/edit_text"
+                    android:maxLines="4"
+                    android:hint="Type  product type here"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Example Siim;Half Galon(for Milk);Jumbo(Eggs);Whole Wheat(Pasta);Pack of 6(Bagles);Large,Lime Flavour(Yogurt)"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:background="#ffffff"
+                android:weightSum="5"
+                >
+
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:layout_width="0dp"
+                    android:singleLine="true"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity:"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="4"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                     android:gravity="center_vertical"
+                    android:background="@drawable/edit_text"
+                    android:weightSum="4"
+                    android:id="@+id/dropdown"
+                    >
+                    <com.esolz.su.zipstar.customviews.MyriadProRegular
+                        android:paddingLeft="15dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                       android:layout_weight="3"
+                        android:id="@+id/txtqnt"
+                        />
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/triangle"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:orientation="vertical"-->
+                        <!--android:background="#ffffff"-->
+                        <!--android:gravity="right"-->
+                        <!-->-->
+
+                        <!--<ListView-->
+                            <!--android:layout_width="150dp"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:id="@+id/quntpicker11"-->
+                            <!--android:layout_gravity="right"-->
+                            <!-->-->
+
+                        <!--</ListView>-->
+                    <!--</LinearLayout>-->
+
+
+            </LinearLayout>
+            </LinearLayout>
+
+<!--tryyyyyyyyyyyyyyyyy-->
+
+
+
+        </LinearLayout>
+
+       </ScrollView>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginLeft="50dp"
+                android:visibility="gone"
+                android:id="@+id/listview_visibel"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    >
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/edit_text"
+                    android:layout_weight="1"
+
+                    >
+                        <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                            android:background="#9A9A9A"
+                           android:gravity="center"
+                            >
+
+
+                    <com.esolz.su.zipstar.customviews.MyriadProRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="Done"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:layout_gravity="center"
+                        android:id="@+id/ok"
+                        />
+
+
+</LinearLayout>
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/listviewdropdown"
+                       android:background="#067BBF"
+                        >
+                    </ListView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:weightSum="2"
+                android:layout_marginBottom="-20dp"
+                >
+                <TextView
+                    android:layout_gravity="top"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="#DA1E00"
+                    android:text="Done"
+                    android:textColor="#ffffff"
+                    android:id="@+id/done" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/landing_container"
+                    android:weightSum="4"
+                    android:orientation="horizontal"
+                    android:background="#4E4E4E"
+                    android:layout_weight="1"
+                    >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/one"
+                        android:gravity="center"
+                        >
+                        <ImageButton
+                            android:layout_width="35dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bottombaricon1"
+                            android:layout_gravity="center"
+                            android:src="@drawable/landing_selector"
+                            android:id="@+id/oneimg"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/two"
+                        android:gravity="center"
+                        >
+                        <ImageButton
+                            android:layout_width="35dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bottombaricon2"
+                            android:layout_gravity="center"
+                            android:id="@+id/twoimg"
+                            android:src="@drawable/landing_selector"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/three"
+                        android:gravity="center"
+                        >
+                        <ImageButton
+                            android:id="@+id/threeimg"
+                            android:background="@drawable/bottombaricon3"
+                            android:src="@drawable/landing_selector"
+                            android:layout_width="35dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:id="@+id/four"
+                        android:gravity="center"
+                        >
+                        <ImageButton
+                            android:id="@+id/fourimg"
+                            android:layout_width="35dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/bottombaricon4"
+                            android:src="@drawable/landing_selector"
+                            android:layout_gravity="center"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

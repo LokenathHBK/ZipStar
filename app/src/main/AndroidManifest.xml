@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.esolz.su.zipstar" >
+<uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:name=".DataType.APP_DATA"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".ZipStar.SplashActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            /><activity android:name=".ZipStar.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            /><activity android:name=".ZipStar.RegestrationActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode=""
+
+            />
+        <activity android:name=".ZipStar.LandingActivity"
+            android:windowSoftInputMode="adjustResize|adjustNothing"
+
+            android:screenOrientation="portrait"
+            /><!--<activity android:name=".ZipStar.SectionListView"--><!--android:screenOrientation="portrait"--><!--/>-->
+        <activity android:name=".ZipStar.SearchActivity"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"
+
+            /><activity android:name=".ZipStar.DateTimePickerDemo"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+
+            /><activity android:name=".ZipStar.PreferredOrderTimeFActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            /><activity android:name=".ZipStar.PendingFragmentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            /><activity android:name=".ZipStar.DeliverFragmentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            /><activity android:name=".ZipStar.SettingFragmentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            /><activity android:name=".Fragment.SelectStore" android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            /><activity android:name=".ZipStar.AddNewStoreFragment"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            /><activity android:name=".Fragment.MannualyAddedFragment"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            />
+
+        <activity android:name=".ZipStar.ReviewGrosseryListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            />
+    </application>
+
+
+</manifest>

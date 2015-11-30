@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/actionBar"
+            android:layout_weight="1"
+            android:background="@drawable/background_blue"
+            >
+
+            <Button
+                android:id="@+id/title_menupopuptrack"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@+id/title_text"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/back"
+                android:layout_marginRight="10dp"           />
+
+            <com.esolz.su.zipstar.customviews.MyriadProBold
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Stores"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/title_menupopuptrack"
+                />
+
+            <com.esolz.su.zipstar.customviews.MyriadProBold
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="New Store"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:weightSum="10"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:background="#ffffff"
+           android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                >
+
+                <com.esolz.su.zipstar.customviews.MyriadProBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Store Name"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                >
+                <com.esolz.su.zipstar.customviews.MyriadProBoldEdit
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:background="#00000000"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                >
+
+
+                <com.esolz.su.zipstar.customviews.MyriadProBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                >
+                <com.esolz.su.zipstar.customviews.MyriadProBoldEdit
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:background="#00000000"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".5"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="#ffffff"
+                >
+
+                <com.esolz.su.zipstar.customviews.MyriadProBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="State"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:layout_weight="1"
+                    />
+                <com.esolz.su.zipstar.customviews.MyriadProBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zip"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+
+                    android:layout_weight="1"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="horizontal"
+                android:background="#ffffff"
+                android:weightSum="2"
+                android:gravity="top"
+                >
+                <com.esolz.su.zipstar.customviews.MyriadProBoldEdit
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:background="#00000000"
+                    android:layout_weight="1"
+                    android:layout_gravity="top"
+                    />
+                <com.esolz.su.zipstar.customviews.MyriadProBoldEdit
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:background="#00000000"
+                    android:layout_weight="1"
+                    android:layout_gravity="top"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                >
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:gravity="bottom"
+            >
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:background="#DA1E00"
+                android:text="DONE"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:layout_gravity="bottom"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

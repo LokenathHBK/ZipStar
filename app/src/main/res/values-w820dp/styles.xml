@@ -1,0 +1,73 @@
+<resources>
+<style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- API 11 theme customizations can go here. -->
+</style>
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    
+
+    <!-- Application theme. -->
+    <style name="QTheme" parent="android:Theme.Light">
+        <item name="android:windowBackground">@color/q_green</item>
+        <item name="android:colorBackground">@color/q_green</item>
+        <item name="android:textViewStyle">@style/QText</item> 
+    </style>
+
+    <color name="q_green">#008000</color>
+    <color name="white">#FFFFFF</color>
+
+    <style name="QText" parent="@android:style/TextAppearance.Medium"> 
+        <item name="android:textSize">20sp</item> 
+        <item name="android:textColor">@color/white</item> 
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">sans</item>
+    </style>
+    <style name="MyListBackContent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="MyListFrontContent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:padding">12dp</item>
+        
+    </style>
+    
+      <style name="MyListButtonAction">
+        
+          <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">80dp</item>
+     
+    </style>
+    
+      
+      <style name="MyListImage">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:scaleGravity">center_vertical</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+
+    <style name="MyListTitle">
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    
+   <style name="MyListTitle2">
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+</resources>

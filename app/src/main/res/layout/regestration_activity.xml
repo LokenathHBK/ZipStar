@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_blue"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/background"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="vertical"
+            android:id="@+id/logo"
+            android:gravity="bottom"
+           >
+            <com.esolz.su.zipstar.customviews.CircleImageView
+                android:id="@+id/textView"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="350dp"
+            android:layout_below="@+id/logo"
+            android:orientation="vertical"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:layout_marginBottom="1dp"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:background="@drawable/inputfield"
+                android:layout_marginBottom="1dp"
+                android:gravity="center"
+                >
+
+                <com.esolz.su.zipstar.customviews.MyriadProRegularEdit
+                    android:singleLine="true"
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:hint="Username"
+                    android:text=""
+                    android:textColorHint="#AF000000"
+                    android:textStyle="normal"
+                    android:layout_gravity="left"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:background="@drawable/inputfield"
+                android:gravity="center"
+
+                android:layout_marginBottom="1dp"
+                >
+                <com.esolz.su.zipstar.customviews.MyriadProRegularEdit
+                    android:id="@+id/email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:hint="Email"
+                    android:singleLine="true"
+                    android:textColorHint="#AF000000"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:background="@drawable/inputfield"
+                android:gravity="center"
+                android:layout_marginBottom="1dp"
+                >
+                <com.esolz.su.zipstar.customviews.MyriadProRegularEdit
+                    android:id="@+id/phno"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:hint="Phone Number"
+                    android:singleLine="true"
+                    android:textColorHint="#AF000000"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:background="@drawable/inputfield"
+                android:gravity="center"
+                android:layout_marginBottom="1dp"
+                >
+                <com.esolz.su.zipstar.customviews.MyriadProRegularEdit
+                    android:id="@+id/loginpswd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:password="true"
+                    android:hint="Password"
+                    android:singleLine="true"
+                    android:textColorHint="#AF000000"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:background="@drawable/inputfield"
+                android:gravity="center"
+                >
+                <com.esolz.su.zipstar.customviews.MyriadProRegularEdit
+                    android:id="@+id/conpas"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:password="true"
+                    android:hint="Confirm Password"
+                    android:singleLine="true"
+                    android:textColorHint="#AF000000"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+            <com.esolz.su.zipstar.customviews.MyriadProRegular
+                android:id="@+id/btnlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/signup"
+                android:textColor="#085987"
+                android:textSize="24sp"
+                android:text="Sign up"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:padding="15dp"
+            >
+
+            <com.esolz.su.zipstar.customviews.MyriadProRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="normal"
+                android:text="Back to"
+                android:textSize="16sp"
+                android:textColor="#38B7FF" />
+            <com.esolz.su.zipstar.customviews.MyriadProBold
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sign up"
+                android:onClick="onClickSignup"
+                android:clickable="true"
+                android:textSize="16sp"
+                android:paddingLeft="4dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</FrameLayout>

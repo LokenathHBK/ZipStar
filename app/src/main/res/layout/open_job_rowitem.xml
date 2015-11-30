@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+           android:layout_weight="3.5"
+            android:weightSum="2"
+            android:gravity="center_horizontal"
+            >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                >
+    <com.esolz.su.zipstar.customviews.MyriadProSemibold
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="demo"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:layout_gravity="top"
+        android:paddingTop="10dp"
+        />
+
+
+    <com.esolz.su.zipstar.customviews.MyriadProRegular
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:text="name"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:singleLine="true"
+        android:paddingTop="20dp"
+        />
+                <com.esolz.su.zipstar.customviews.MyriadProRegular
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:text="name"
+                    android:textColor="#067BC0"
+                    android:textSize="18sp"
+                    android:singleLine="true"
+                    />
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:gravity="right"
+                >
+                <com.esolz.su.zipstar.customviews.MyriadProSemibold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="$"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:singleLine="true"
+                  android:paddingTop="10dp"
+                    />
+
+
+                <com.esolz.su.zipstar.customviews.MyriadProSemibold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+                    android:text="50"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:singleLine="true"
+                    android:id="@+id/price"
+                    />
+            </LinearLayout>
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_weight=".5"
+            android:gravity="center"
+            >
+
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+android:background="@drawable/rightarrow"
+                android:layout_marginLeft="10dp"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

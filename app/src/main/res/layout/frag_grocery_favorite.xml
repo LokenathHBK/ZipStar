@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="${relativePackage}.${activityClass}" >
+
+<com.esolz.su.zipstar.SwipeListView.SwipeMenuListView
+    android:id="@+id/listView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/actionBa1r"
+        android:background="#ffffff"
+        android:layout_below="@+id/searchll1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="visible"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_below="@+id/searchll1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <com.esolz.su.zipstar.customviews.MyriadProRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Your Favorite List is Empty.To Add Some"
+                android:textColor="#0779C0"
+                android:textSize="20sp"
+                android:id="@+id/firstline"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_below="@+id/searchll1"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+            <com.esolz.su.zipstar.customviews.MyriadProRegular
+                android:id="@+id/abcd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="item please click on"
+                android:textColor="#0779C0"
+                android:textSize="20sp"
+                android:layout_below="@+id/secondline"
+                />
+            <com.esolz.su.zipstar.customviews.MyriadProRegular
+                android:id="@+id/next11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="plus icon."
+                android:textColor="#FE0000"
+                android:textSize="20sp"
+                android:layout_marginLeft="5dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

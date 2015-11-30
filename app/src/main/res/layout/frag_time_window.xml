@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/actionBar"
+            android:layout_weight="1"
+            android:background="@drawable/background_blue"
+            >
+
+            <Button
+                android:id="@+id/title_menupopuptrack"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignBottom="@+id/title_text"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/back"
+                android:layout_marginRight="10dp"           />
+
+            <com.esolz.su.zipstar.customviews.MyriadProBold
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Stores"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/title_menupopuptrack"
+                />
+
+            <com.esolz.su.zipstar.customviews.MyriadProBold
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Time Window"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:weightSum="10"
+            android:layout_weight="8"
+            android:orientation="vertical"
+            android:background="#ffffff"
+           android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            >
+
+<ListView
+    android:layout_width="fill_parent"
+    android:layout_height="0dp"
+    android:layout_weight="10"
+    android:id="@+id/time_window_list"
+
+    >
+
+</ListView>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:gravity="bottom"
+            >
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:background="#DA1E00"
+                android:text="I dont see a Time that Work for me"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:layout_gravity="bottom"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
